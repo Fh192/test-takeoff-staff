@@ -1,0 +1,24 @@
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 45px;
+  background: #20df7f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+  &:active {
+    box-shadow: none;
+    transform: scale(0.97);
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.error {
+  background: #d30000;
+}

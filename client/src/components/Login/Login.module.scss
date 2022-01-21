@@ -1,0 +1,38 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  height: 45px;
+  background: #224957;
+  border-radius: 10px;
+  padding: 0 15px;
+
+  &::placeholder {
+    color: #fff;
+  }
+}

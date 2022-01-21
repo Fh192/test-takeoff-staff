@@ -1,0 +1,17 @@
+{
+  "name": "test-takeoff-staff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "init-server": "cd ./server && yarn init --yes",
+    "init-client": "cd ./client && yarn init --yes",
+    "init-app": "concurrently \" yarn init-server\" \"yarn init-client\"",
+    "start-server": "cd ./server && yarn start",
+    "start-client": "cd ./client && yarn start",
+    "start": "concurrently --kill-others-on-fail \"yarn init-app\" \"yarn start-server\" \"yarn start-client\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

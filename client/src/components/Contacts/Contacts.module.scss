@@ -1,0 +1,15 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
